@@ -31,9 +31,9 @@ function extended {
 }
 
 function basic {
-	cd ~/.vim_runtime
+	cd ~/.vim/runtime
 	
-	cat ~/.vim_runtime/vimrcs/basic.vim > ~/.vimrc
+	cat ~/.vim/runtime/vimrcs/basic.vim > ~/.vimrc
 	
 	echo "Basic Vim configurations has been installed."
 	exit 0;
