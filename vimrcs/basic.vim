@@ -65,6 +65,11 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Use relative line numbers - uncomment the following code to use relative line numbers
+" if exists("&relativenumber")
+"    set relativenumber
+"    au BufReadPost * set relativenumber
+" endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -139,6 +144,90 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Make Vim more useful
+set nocompatible
+
+" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed
+
+" Enhance command-line completion
+set wildmenu
+
+" Allow cursor keys in insert mode
+set esckeys
+
+" Allow backspace in insert mode
+set backspace=indent,eol,start
+
+" Optimize for fast terminal connections
+set ttyfast
+
+" Add the g flag to search/replace by default
+set gdefault
+
+" Change mapleader
+let mapleader=","
+
+" Hides the additional command bar
+set noshowmode
+
+" Don’t add empty newlines at the end of files
+set binary
+set noeol
+
+" Don’t create backups when editing files in certain directories
+set backupskip=/tmp/*,/private/tmp/*
+
+" Respect modeline in files
+set modeline
+set modelines=4
+
+" Enable per-directory .vimrc files and disable unsafe commands in them
+set exrc
+set secure
+
+" Enable line numbers
+set number
+
+" Enable syntax highlighting
+syntax on
+
+" Highlight current line
+set cursorline
+
+" Make tabs as wide as two spaces
+set tabstop=2
+
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
+
+" Always show status line
+set laststatus=2
+
+" Disable error bells
+set noerrorbells
+
+" Don’t reset cursor to start of line when moving around.
+set nostartofline
+
+" Show the cursor position
+set ruler
+
+" Don’t show the intro message when starting Vim
+set shortmess=atI
+
+" Show the current mode
+set showmode
+
+" Show the filename in the window titlebar
+set title
+
+" Show the (partial) command as it’s being typed
+set showcmd
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -162,7 +251,8 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+" without BOM.
+set encoding=utf8 nobomb
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -171,10 +261,19 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
-set nobackup
-set nowb
-set noswapfile
+" Remove the following lines to turn backup off, 
+" since most stuff is in SVN, git et.c anyway...
+
+" set nobackup
+" set nowb
+" set noswapfile
+
+" Centralize backups, swapfiles and undo history
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+if exists("&undodir")
+    set undodir=~/.vim/undo
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -400,6 +499,16 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+" Strip trailing whitespace (,ss)
+function! StripWhitespace()
+    let save_cursor = getpos(".")
+    let old_query = getreg('/')
+    :%s/\s\+$//e
+    call setpos('.', save_cursor)
+    call setreg('/', old_query)
+endfunction
+
+noremap <leader>ss :call StripWhitespace()<CR>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
