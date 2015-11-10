@@ -334,4 +334,4 @@ Vimscript mappings:
 
 ## License
 
-MIT
+[MIT](https://github.com/umayr/vimrc/blob/master/LICENSE)
