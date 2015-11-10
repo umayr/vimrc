@@ -24,8 +24,8 @@ Note: The `taglist.vim` plugin will require [`ctags`](http://ctags.sourceforge.n
 Do yourself a favour and use [cmder](https://github.com/cmderdev/cmder) if you're not using it and run the installation instructions above. No special instructions needed.
 
 ## Fonts
-I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
-
+It is recommended to use patched fonts for terminal so that `airline` would show special separtors, you can get all patched fonts from [powerline/fonts](https://github.com/powerline/fonts).
+I also recommend using [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono) (it's a patched version of Ubuntu's default monospace font for writing and programming).
 
 ## Update
 
