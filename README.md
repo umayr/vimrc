@@ -102,7 +102,7 @@ In order to update plugins:
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) Default
 * [vim-irblack](https://github.com/wgibbs/vim-irblack)
 * [mayansmoke](https://github.com/vim-scripts/mayansmoke)
-* [peaksea](https://github.com/vim-scripts/peaksea): My favorite!
+* [peaksea](https://github.com/vim-scripts/peaksea)
 * [vim-pyte](https://github.com/therubymug/vim-pyte)
 
 
@@ -136,183 +136,182 @@ After the extended installation, it makes the following directory structure:
 You can add any of your personal configurations in the `config.vim` file.
 
 
-
 ## Key Mappings
 
 ### Plugin related mappings
 
 Open [bufexplorer](https://github.com/vim-scripts/bufexplorer.zip) and see and manage the current buffers:
-    
-    map <leader>o :BufExplorer<cr>
-
+```VimL
+map <leader>o :BufExplorer<cr>
+```
 Open [MRU.vim](https://github.com/vim-scripts/mru.vim) and see the recently open files:
-
-    map <leader>f :MRU<CR>
-
+```VimL
+map <leader>f :MRU<CR>
+```
 Open [ctrlp.vim](https://github.com/kien/ctrlp.vim) plugin:
-    
-    let g:ctrlp_map = '<c-f>'
-
+```VimL
+let g:ctrlp_map = '<c-f>'
+```
 Open [PeepOpen](https://peepcode.com/products/peepopen) plugin:
-
-    map <leader>j :PeepOpen<cr>
-
+```VimL
+map <leader>j :PeepOpen<cr>
+```
 Managing the [NERD Tree](https://github.com/scrooloose/nerdtree) plugin:
-
-    map <leader>nn :NERDTreeToggle<cr>
-    map <leader>nb :NERDTreeFromBookmark 
-    map <leader>nf :NERDTreeFind<cr>
-
+```VimL
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nb :NERDTreeFromBookmark 
+map <leader>nf :NERDTreeFind<cr>
+```
 [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2) lets you only focus on one thing at a time. It removes all the distractions and centers the content. It has a special look when editing Markdown, reStructuredText and textfiles. It only has one mapping.
-
-    map <leader>z :Goyo<cr>
-
+```VimL
+map <leader>z :Goyo<cr>
+```
 ### Normal mode mappings
 
 Fast saving of a buffer:
-
-	nmap <leader>w :w!<cr>
-
+```VimL
+nmap <leader>w :w!<cr>
+```
 Treat long lines as break lines (useful when moving around in them):
-
-	map j gj
-	map k gk
-	
+```VimL
+map j gj
+map k gk
+```	
 Map `<Space>` to `/` (search) and `<Ctrl>+<Space>` to `?` (backwards search):
-	
-	map <space> /
-	map <c-space> ?
-	map <silent> <leader><cr> :noh<cr>
-
+```VimL	
+map <space> /
+map <c-space> ?
+map <silent> <leader><cr> :noh<cr>
+```
 Disable highlight when `<leader><cr>` is pressed:
-	
-	map <silent> <leader><cr> :noh<cr>
-
+```VimL	
+map <silent> <leader><cr> :noh<cr>
+```
 Smart way to move between windows:
-	
-	map <C-j> <C-W>j
-	map <C-k> <C-W>k
-	map <C-h> <C-W>h
-	map <C-l> <C-W>l
-
+```VimL	
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+```
 Closing of current buffer(s):
-	
-	" Close current buffer
-	map <leader>bd :Bclose<cr>
-	
-	" Close all buffers
-	map <leader>ba :1,1000 bd!<cr>
-	
+```VimL	
+" Close current buffer
+map <leader>bd :Bclose<cr>
+
+" Close all buffers
+map <leader>ba :1,1000 bd!<cr>
+```	
 Useful mappings for managing tabs:
-	
-	map <leader>tn :tabnew<cr>
-	map <leader>to :tabonly<cr>
-	map <leader>tc :tabclose<cr>
-	map <leader>tm :tabmove 
-	
-	" Opens a new tab with the current buffer's path
-	" Super useful when editing files in the same directory
-	map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
-	
+```VimL	
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove 
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+```	
 Switch CWD to the directory of the open buffer:
-	
-	map <leader>cd :cd %:p:h<cr>:pwd<cr>
-	
+```VimL	
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+```	
 Open vimgrep and put the cursor in the right position:
-	
-	map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
-
+```VimL	
+map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
+```
 Vimgreps in the current file:
-	
-	map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
-
+```VimL	
+map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
+```
 Remove the Windows ^M - when the encodings gets messed up:
-	
-	noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-	
+```VimL	
+noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+```	
 Quickly open a buffer for scripbble:
-	
-	map <leader>q :e ~/buffer<cr>
-
+```VimL	
+map <leader>q :e ~/buffer<cr>
+```
 Toggle paste mode on and off:
-	
-	map <leader>pp :setlocal paste!<cr>
-
+```VimL	
+map <leader>pp :setlocal paste!<cr>
+```
 
 ### Insert mode mappings
 
 Quickly insert parenthesis/brackets/etc.:
-
-    inoremap $1 ()<esc>i
-    inoremap $2 []<esc>i
-    inoremap $3 {}<esc>i
-    inoremap $4 {<esc>o}<esc>O
-    inoremap $q ''<esc>i
-    inoremap $e ""<esc>i
-    inoremap $t <><esc>i
-
+```VimL
+inoremap $1 ()<esc>i
+inoremap $2 []<esc>i
+inoremap $3 {}<esc>i
+inoremap $4 {<esc>o}<esc>O
+inoremap $q ''<esc>i
+inoremap $e ""<esc>i
+inoremap $t <><esc>i
+```
 Insert the current date and time (useful for timestamps):
-
-    iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
-
+```VimL
+iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+```
 
 ### Visual mode mappings
 
 Visual mode pressing `*` or `#` searches for the current selection:
-
-	vnoremap <silent> * :call VisualSelection('f')<CR>
-	vnoremap <silent> # :call VisualSelection('b')<CR>
-
+```VimL
+vnoremap <silent> * :call VisualSelection('f')<CR>
+vnoremap <silent> # :call VisualSelection('b')<CR>
+```
 When you press gv you vimgrep after the selected text:
-
-	vnoremap <silent> gv :call VisualSelection('gv')<CR>
-
+```VimL
+vnoremap <silent> gv :call VisualSelection('gv')<CR>
+```
 When you press `<leader>r` you can search and replace the selected text:
-
-	vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
-
+```VimL
+vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
+```
 Surround the visual selection in parenthesis/brackets/etc.:
-
-    vnoremap $1 <esc>`>a)<esc>`<i(<esc>
-    vnoremap $2 <esc>`>a]<esc>`<i[<esc>
-    vnoremap $3 <esc>`>a}<esc>`<i{<esc>
-    vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-    vnoremap $q <esc>`>a'<esc>`<i'<esc>
-    vnoremap $e <esc>`>a"<esc>`<i"<esc>
-	
+```VimL
+vnoremap $1 <esc>`>a)<esc>`<i(<esc>
+vnoremap $2 <esc>`>a]<esc>`<i[<esc>
+vnoremap $3 <esc>`>a}<esc>`<i{<esc>
+vnoremap $$ <esc>`>a"<esc>`<i"<esc>
+vnoremap $q <esc>`>a'<esc>`<i'<esc>
+vnoremap $e <esc>`>a"<esc>`<i"<esc>
+```	
 
 ### Command line mappings
 
 $q is super useful when browsing on the command line. It deletes everything until the last slash:
-
-    cno $q <C-\>eDeleteTillSlash()<cr>
-
+```VimL
+cno $q <C-\>eDeleteTillSlash()<cr>
+```
 Bash like keys for the command line:
+```VimL
+cnoremap <C-A>		<Home>
+cnoremap <C-E>		<End>
+cnoremap <C-K>		<C-U>
 
-    cnoremap <C-A>		<Home>
-    cnoremap <C-E>		<End>
-    cnoremap <C-K>		<C-U>
-
-    cnoremap <C-P> <Up>
-    cnoremap <C-N> <Down>
-
+cnoremap <C-P> <Up>
+cnoremap <C-N> <Down>
+```
 Write the file as sudo (only on Unix). Super useful when you open a file and you don't have permissions to save your changes. [Vim tip](http://vim.wikia.com/wiki/Su-write):
-
-    :W 
-
+```VimL
+:W 
+```
 
 ### Spell checking
 Pressing `<leader>ss` will toggle and untoggle spell checking
-
-    map <leader>ss :setlocal spell!<cr>
-
+```VimL
+map <leader>ss :setlocal spell!<cr>
+```
 Shortcuts using `<leader>` instead of special chars
-
-    map <leader>sn ]s
-    map <leader>sp [s
-    map <leader>sa zg
-    map <leader>s? z=
-
+```VimL
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
+```
 ### Cope	
 Do :help cope if you are unsure what cope is. It's super useful!
 
@@ -326,12 +325,12 @@ To go to the previous search results do:
 `<leader>p`
 
 Vimscript mappings:
-
-    map <leader>cc :botright cope<cr>
-    map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
-    map <leader>n :cn<cr>
-    map <leader>p :cp<cr>
-
+```VimL
+map <leader>cc :botright cope<cr>
+map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+```
 ## License
 
 [MIT](https://github.com/umayr/vimrc/blob/master/LICENSE)
