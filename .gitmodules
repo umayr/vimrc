@@ -1,0 +1,117 @@
+[submodule "sources/ack.vim"]
+	path = sources/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "sources/ag.vim"]
+	path = sources/ag.vim
+	url = https://github.com/rking/ag.vim
+[submodule "sources/bufexplorer"]
+	path = sources/bufexplorer
+	url = https://github.com/corntrace/bufexplorer
+[submodule "sources/ctrlp.vim"]
+	path = sources/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "sources/mayansmoke"]
+	path = sources/mayansmoke
+	url = https://github.com/vim-scripts/mayansmoke
+[submodule "sources/nerdtree"]
+	path = sources/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "sources/nginx.vim"]
+	path = sources/nginx.vim
+	url = https://github.com/vim-scripts/nginx.vim
+[submodule "sources/open_file_under_cursor.vim"]
+	path = sources/open_file_under_cursor.vim
+	url = https://github.com/amix/open_file_under_cursor.vim
+[submodule "sources/snipmate-snippets"]
+	path = sources/snipmate-snippets
+	url = https://github.com/scrooloose/snipmate-snippets
+[submodule "sources/tlib"]
+	path = sources/tlib
+	url = https://github.com/vim-scripts/tlib
+[submodule "sources/vim-addon-mw-utils"]
+	path = sources/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils
+[submodule "sources/vim-bundle-mako"]
+	path = sources/vim-bundle-mako
+	url = https://github.com/sophacles/vim-bundle-mako
+[submodule "sources/vim-coffee-script"]
+	path = sources/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule "sources/vim-colors-solarized"]
+	path = sources/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "sources/vim-indent-object"]
+	path = sources/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object
+[submodule "sources/vim-less"]
+	path = sources/vim-less
+	url = https://github.com/groenewege/vim-less
+[submodule "sources/vim-markdown"]
+	path = sources/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule "sources/vim-pyte"]
+	path = sources/vim-pyte
+	url = https://github.com/therubymug/vim-pyte
+[submodule "sources/vim-snipmate"]
+	path = sources/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate
+[submodule "sources/vim-snippets"]
+	path = sources/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "sources/vim-surround"]
+	path = sources/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "sources/vim-expand-region"]
+	path = sources/vim-expand-region
+	url = https://github.com/terryma/vim-expand-region
+[submodule "sources/vim-multiple-cursors"]
+	path = sources/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "sources/vim-fugitive"]
+	path = sources/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "sources/vim-airline"]
+	path = sources/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "sources/goyo.vim"]
+	path = sources/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
+[submodule "sources/vim-zenroom2"]
+	path = sources/vim-zenroom2
+	url = https://github.com/amix/vim-zenroom2
+[submodule "sources/syntastic"]
+	path = sources/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "sources/vim-repeat"]
+	path = sources/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "sources/vim-commentary"]
+	path = sources/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "sources/vim-go"]
+	path = sources/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "sources/vim-gitgutter"]
+	path = sources/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "sources/gruvbox"]
+	path = sources/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "sources/YankRing.vim"]
+	path = sources/YankRing.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "sources/vim-peepopen"]
+	path = sources/vim-peepopen
+	url = https://github.com/shemerey/vim-peepopen.git
+[submodule "sources/emmet-vim"]
+	path = sources/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "sources/mru.vim"]
+	path = sources/mru.vim
+	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "sources/tabline.vim"]
+	path = sources/tabline.vim
+	url = https://github.com/mkitt/tabline.vim.git
+[submodule "sources/peaksea"]
+	path = sources/peaksea
+	url = https://github.com/vim-scripts/peaksea.git
