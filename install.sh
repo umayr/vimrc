@@ -15,10 +15,10 @@ function extended {
 
 	echo 'set runtimepath+=~/.vim/runtime
 
-	source ~/.vim/runtime/vimrcs/basic.vim
-	source ~/.vim/runtime/vimrcs/filetypes.vim
-	source ~/.vim/runtime/vimrcs/plugins_config.vim
-	source ~/.vim/runtime/vimrcs/extended.vim
+	source ~/.vim/runtime/config/basic.vim
+	source ~/.vim/runtime/config/filetypes.vim
+	source ~/.vim/runtime/config/plugins_config.vim
+	source ~/.vim/runtime/config/extended.vim
 
 	try
 		source ~/.vim/runtime/config.vim
@@ -33,7 +33,7 @@ function extended {
 function basic {
 	cd ~/.vim/runtime
 	
-	cat ~/.vim/runtime/vimrcs/basic.vim > ~/.vimrc
+	cat ~/.vim/runtime/config/basic.vim > ~/.vimrc
 	
 	echo "Basic Vim configurations has been installed."
 	exit 0;

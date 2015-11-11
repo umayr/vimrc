@@ -120,17 +120,17 @@ In order to update plugins:
 
 After the extended installation, it makes the following directory structure:
 ```
-.vim
-├── backups
+.vim/
+├── backups/
 ├── config.vim
-├── runtime
-│   ├── autoload
+├── runtime/
+│   ├── autoload/
 │   ├── install.sh
 │   ├── README.md
-│   ├── sources
-│   └── vimrcs
-├── swaps
-└── undo
+│   ├── sources/
+│   └── config/
+├── swaps/
+└── undo/
 ```
 
 You can add any of your personal configurations in the `config.vim` file.
