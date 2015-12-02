@@ -7,7 +7,7 @@ function bootstrap {
 	' > ~/.vim/config.vim
 
 	cd ~/.vim/
-	git clone https://github.com/umayr/vimrc.git runtime
+	git clone --recursive https://github.com/umayr/vimrc.git runtime
 }
 
 function extended {
