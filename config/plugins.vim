@@ -28,7 +28,7 @@ map <leader>f :MRU<CR>
 if has("win16") || has("win32")
     " Don't do anything
 else
-    let g:yankring_history_dir = '~/.vim/runtime/undo/'
+    let g:yankring_history_dir = '~/.vim/runtime/undo'
 endif
 
 
@@ -130,3 +130,9 @@ nnoremap <silent> <leader>l :call SyntasticCheckCoffeescript()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim PeepOpen
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <unique> <silent> <Leader>po <Plug>PeepOpen
