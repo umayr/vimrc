@@ -17,7 +17,7 @@ function extended {
 
 	source ~/.vim/runtime/config/basic.vim
 	source ~/.vim/runtime/config/filetypes.vim
-	source ~/.vim/runtime/config/plugins_config.vim
+	source ~/.vim/runtime/config/plugins.vim
 	source ~/.vim/runtime/config/extended.vim
 
 	try
