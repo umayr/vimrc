@@ -21,7 +21,7 @@ function extended {
 	source ~/.vim/runtime/config/extended.vim
 
 	try
-		source ~/.vim/runtime/config.vim
+		source ~/.vim/config.vim
 	catch
 	endtry' > ~/.vimrc
 
