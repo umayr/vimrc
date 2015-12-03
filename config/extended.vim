@@ -34,6 +34,11 @@ else
     let g:colors_name="desert"
 endif
 
+" Enable full color support
+if $COLORTERM == 'gnome-terminal'
+      set t_Co=256
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
