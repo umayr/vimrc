@@ -38,19 +38,19 @@ Simply just do a git rebase:
 ## Screenshots
 
 Empty vim using `Solarized Dark` theme:
-![screenshot from 2015-11-10 12 52 26](https://cloud.githubusercontent.com/assets/3071948/11057201/27da07a4-8757-11e5-9b85-4af08ed2fde3.png)
+![screenshot from 2015-11-10 12 52 26](https://cloud.githubusercontent.com/assets/3071948/11608373/15c1de66-9b89-11e5-942c-7f8a08e6031f.png)
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) in action:
-![screenshot from 2015-11-10 12 53 22](https://cloud.githubusercontent.com/assets/3071948/11057199/27d825f6-8757-11e5-9494-28c7df8a1fb9.png)
+![screenshot from 2015-11-10 12 53 22](https://cloud.githubusercontent.com/assets/3071948/11608374/15f04cec-9b89-11e5-9730-2418e265fa6d.png)
 
 [CtrlP.vim](https://github.com/kien/ctrlp.vim) in action:
-![screenshot from 2015-11-10 12 54 11](https://cloud.githubusercontent.com/assets/3071948/11057200/27d985c2-8757-11e5-986e-10e031eff9ed.png)
+![screenshot from 2015-11-10 12 54 11](https://cloud.githubusercontent.com/assets/3071948/11608375/1606334a-9b89-11e5-8fc6-baaf1f056802.png)
 
 [MRU.vim](https://github.com/scrooloose/nerdtree) displays most recent used files:
-![screenshot from 2015-11-10 12 56 26](https://cloud.githubusercontent.com/assets/3071948/11057202/27da88b4-8757-11e5-8a3e-5571213f358a.png)
+![screenshot from 2015-11-10 12 56 26](https://cloud.githubusercontent.com/assets/3071948/11608376/160a081c-9b89-11e5-9b01-d112d4883b28.png)
 
 Distraction free mode using [Goyo](https://github.com/junegunn/goyo.vim):
-![screenshot from 2015-11-10 12 59 01](https://cloud.githubusercontent.com/assets/3071948/11057203/27dcbe4a-8757-11e5-9ffd-7255914243de.png)
+![screenshot from 2015-11-10 12 59 01](https://cloud.githubusercontent.com/assets/3071948/11608377/160e8c20-9b89-11e5-9f39-26325549ae66.png)
 
 ## Plugins
 
