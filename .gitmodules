@@ -115,3 +115,12 @@
 [submodule "sources/peaksea"]
 	path = sources/peaksea
 	url = https://github.com/vim-scripts/peaksea.git
+[submodule "sources/neocomplete.vim"]
+	path = sources/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "sources/vim-airline-themes"]
+	path = sources/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "sources/tagbar"]
+	path = sources/tagbar
+	url = https://github.com/majutsushi/tagbar.git
